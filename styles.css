@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: rgb(7, 0, 62);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 132, 255);
+}
+
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.display-flex{
+    display: flex;
+}
+header{
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+    padding: 25px 150px;
+    /* background-color: aqua; */
+    /* border: solid black 1px; */
+    box-shadow: rgb(91, 91, 91) 0px 0px 5px;
+}
+.header{
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: solid black 1px;
+    box-shadow: rgb(91, 91, 91) 0px 0px 5px;
+}
+
+.logo img{
+    width: 200px;
+    zoom: 105%;
+}
+
+.web-author{
+    width: 55vw;
+    /* border: 1px red solid; */
+}
+
+.web-author .webname{
+    color:  black;
+    font-weight: bold;
+    font-size: 6.8rem;
+    text-shadow: rgba(29, 146, 255, 0.612) -3px 3px 8px;
+}
+.web-author .author{
+    color:  rgb(15, 38, 77);
+    font-size: 1.3rem;
+    text-indent: .5rem;
+}
+
+.cvcontainer{
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.cvwrapper{
+    width: 98vw;
+    height: fit-content;
+    justify-content: center;
+    align-items: stretch;
+    padding: 1.5rem 1rem;
+    border: black 2px solid;
+    border-radius: 8px;
+    box-shadow: rgba(155, 155, 155, 0.701) 0px 0px 10px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.cvwrapper::-webkit-scrollbar{
+    height: 2px;
+    border-radius: 20px;
+}
+.cvpage{
+    /* width: 827px;
+    height: 1169px; */
+    width: 21cm;
+    height: 29.7cm;
+    padding: 0.8cm;
+    border: 3px solid #f5faeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftbox{
+    position: relative;
+    width: 8.5cm;
+    height: 28cm;
+    /* border: solid 1px red; */
+}
+.leftbg img{
+    height: 28cm;
+    position: absolute;
+    z-index: 0;
+}
+.leftdetails{
+    width: 8.5cm;
+    height: 28cm;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+.picholder{
+    position: relative;
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    /* border: solid 1px red; */
+    margin: 2.3cm 0.5cm;
+    rotate: 12deg;
+}
+.picbox{
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: -12deg;
+}
+.picbox img{
+    width: 200px;
+    height: 200px;
+}
+.picdecor{
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    z-index: 1;
+}
+.picdecor img{
+    width: 270px;
+    height: 270px;
+}
+.nameholder{
+    width: 8.5cm;
+    padding: 0 0.25cm;
+    text-align: center;
+    height: fit-content;
+    word-wrap: break-word;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: -1.5cm;
+}
+
+.profilebox, .contactbox{
+    width: 8.5cm;
+    height: fit-content;
+    padding: 1cm 0.25cm;
+}
+
+.profilehead{
+    font-size: 19px;
+    font-weight: bold;
+    padding: 0.2cm 0;
+    border-bottom: solid 3px rgba(0, 128, 0, 0.758);
+}
+.profiledescription, table{
+    width: 7.7cm;
+    font-size: 16px;
+    padding: 0.1cm;
+    line-height: 0.65cm;
+}
+
+.contactbox{
+    margin-top: -1cm;
+}
+
+
+.rightbox{
+    width: 10.9cm;
+    height: 28cm;
+    position: relative;
+    z-index: 10;
+    /* overflow: hidden; */
+    /* border: 1px red solid; */
+}
+
+.rightsubbox{
+    width: 10.9cm;
+    height: 200px;
+}
+.subboximage{
+    position: relative;
+    width: 10.9cm;
+    height: 75px;
+    right: 0.10cm;
+    top: 0.15cm;
+    z-index: 5;
+    margin-top: 0.15cm;
+}
+.subboximage img{
+    width: 11.5cm;
+    position: relative;
+    right: 0.65cm;
+}
+.subboxhead{
+    position: absolute;
+    top: 0.35cm;
+    left: 0;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.eduinstitutionname, .workinstitutionname{
+    font-size: 19px;
+    font-weight: bold;
+    padding: 0 0.25cm;
+    margin-top: 0.35cm;
+}
+.eduyear, .workyear{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 0.25cm;
+    margin-top: 0.15cm;
+}
+.edudetail, .workdetail{
+    font-size: 14px;
+    padding: 0 0.25cm;
+    margin-top: 0.15cm;
+    line-height: 0.65cm;
+}
+
+
+
+
+
+.printcontrole{
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.button button{
+    background-color: red;
+    color: white;
+    width: 250px;
+    font-size: 1.1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    border: solid red 2px ;
+    border-radius: 5px;
+    box-shadow: black 0px 0px 5px;
+    cursor: pointer;
+}
+.button button:hover{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1024px) and (min-width:769px){
+    html{
+        font-size: 16px;
+    }
+    header{
+        padding: 25px 50px;
+    }
+    .cvwrapper{
+        flex-direction: column;
+    }
+   
+}
+@media (max-width:768px) and (min-width:424px){
+    html{
+        font-size: 14px;
+    }
+    header{
+        padding: 25px 10px;
+    }
+    .web-author{
+        margin-left: 1rem;
+    }
+    .web-author .webname{
+        font-size: 4.8rem;
+    }
+    .web-author .author{
+        font-size: 1.1rem;
+        /* text-indent: 12rem; */
+    }
+    .cvwrapper{
+        flex-direction: column;
+    }
+}
+
+@media (min-width:376px) and (max-width:425px){
+    html{
+        font-size: 12px;
+    }
+    header{
+        padding: 25px 10px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .web-author{
+        width: 90vw;
+        border: 1px red solid;
+    }
+    .web-author .webname{
+        font-size: 4.5rem;
+        text-align: center;
+    }
+    .web-author .author{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .cvwrapper{
+        flex-direction: column;
+    }
+}
+@media (min-width:0px) and (max-width:375px){
+    html{
+        font-size: 10px;
+    }
+    .cvwrapper{
+        flex-direction: column;
+    }
+}
+
+
+@media print{
+    header, .formcontainer,.printcontrole{
+        display: none;
+    }
+    .cvcontainer{
+        margin: auto auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cvwrapper{
+        width: fit-content;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        border: none;
+        border-radius: 1px;
+        box-shadow: none;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    .cvholder{
+        display: block;
+        overflow: hidden;
+    }
+}
